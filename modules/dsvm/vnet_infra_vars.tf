@@ -1,0 +1,12 @@
+variable "rg_vnet1_name" {}
+variable "rg_vnet1_location" {}
+variable "vnet1_name" {}
+variable "vnet1_address_space" {}
+variable "vnet1_subnet_name" {}
+variable "vnet1_subnet1_address_prefix1" {}
+variable "vnet1_nsg_name" {}
+variable "infra_key_vault_name" {}
+#variable "kv_uri" {}
+variable "permanent_infra_rg_name" {}
+variable "davids_home_ip_secret_name" {}
+variable "shanikas_home_ip_secret_name" {}
