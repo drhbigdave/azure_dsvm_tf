@@ -16,13 +16,19 @@ module "dsvm" {
   # keep networking above for easy re-use for other VMs, VM below
   network_interface_name          = "dsvm01-nic0"
   dsvm_admin_password_secret_name = "dsvm-admin-password"
+  dsvm_count                      = 1
   dsvm_vm1_name                   = "dsvm01"
-  vm_size                         = "Standard DS3 v2" #too expensive
+  vm_size                         = "Standard_B4ms"   #Standard_DS3_v2
+  vm_os_disk_sa_type              = "StandardSSD_LRS" #Standard_LRS, StandardSSD_LRS and Premium_LRS
   adminuser_name                  = "dsvmadmin0"
-  vm_publisher                    = "microsoft-dsvm"
-  vm_offer                        = "dsvm-win-2019"
-  vm_sku                          = "server-2019-g2"
-  vm_version                      = "latest"
+  #vm_publisher                    = "microsoft-dsvm"
+  #vm_offer                        = "dsvm-win-2019"
+  #vm_sku                          = "server-2019-g2"
+  #vm_version                      = "latest"
+  vm_publisher = "MicrosoftWindowsServer"
+  vm_offer     = "WindowsServer"
+  vm_sku       = "2019-datacenter-gensecond"
+  vm_version   = "latest"
 }
 
 module "permanent_infra" {

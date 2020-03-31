@@ -1,8 +1,10 @@
 variable "network_interface_name" {}
 variable "dsvm_admin_password_secret_name" {}
 variable "kv_id" {}
+variable "dsvm_count" {}
 variable "dsvm_vm1_name" {}
 variable "vm_size" {}
+variable "vm_os_disk_sa_type" {}
 variable "adminuser_name" {}
 variable "vm_publisher" {}
 variable "vm_offer" {}
