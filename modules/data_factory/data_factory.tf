@@ -1,9 +1,6 @@
-# intent is to have shared resources for deployment
-# requiring a vnet here
-
 resource "azurerm_resource_group" "vnet_infra" {
-  name     = var.rg_vnet1_name
-  location = var.rg_vnet1_location
+  name     = var.df_rg_name
+  location = var.df_rg_location #TODO make this project-resource-attr common
 }
 
 resource "azurerm_virtual_network" "vnet1" {
