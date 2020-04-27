@@ -7,7 +7,7 @@ module "dsvm" {
   vnet1_subnet_name             = "vm_subnet_dot2"
   vnet1_address_space           = ["10.0.0.0/16"]
   vnet1_subnet1_address_prefix1 = "10.0.2.0/24"
-  infra_key_vault_name          = module.permanent_infra.key_vault_name_out #"drh-infra-keyvault1" #module.permanent_infra.azurerm_key_vault.kv1.name
+  infra_key_vault_name          = module.permanent_infra.key_vault_name_out #"drh-infra-keyvault1"
   permanent_infra_rg_name       = module.permanent_infra.permanent_infra_rg_name_out
   kv_id                         = module.permanent_infra.key_vault_id_out
   vnet1_nsg_name                = "home_access"

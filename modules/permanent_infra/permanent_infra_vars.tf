@@ -5,3 +5,4 @@ variable "remote_state_sa_name" {}
 variable "remote_state_sa_container1_name" {}
 variable "davids_home_ip_secret_name" {}
 variable "shanikas_home_ip_secret_name" {}
+#variable "drh_object_id" {}
