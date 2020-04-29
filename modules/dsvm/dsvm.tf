@@ -33,7 +33,6 @@ resource "azurerm_network_interface_security_group_association" "dsvm_assoc" {
 data "azurerm_key_vault_secret" "dsvm_admin_password" {
   name         = var.dsvm_admin_password_secret_name
   key_vault_id = var.kv_id
-  #vault_uri    = var.kv_uri
 }
 
 resource "azurerm_windows_virtual_machine" "dsvm_vm1" {

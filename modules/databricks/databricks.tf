@@ -13,5 +13,6 @@ resource "azurerm_databricks_workspace" "databricks_workspace1" {
     Environment = "personal"
     pluralsight_class = "Implementing a Databricks Environment in MS Aure"
     instructor = "Michael Bender"
+    incurs_cost = "no"
   }
 }
