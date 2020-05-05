@@ -5,10 +5,15 @@ module "permanent_infra" {
 module "databricks" {
   source = "./environments/personal_infra/databricks"
 }
+
+module "aci" {
+  source = "./environments/personal_infra/aci"
+}
+/*
 module "synapse" {
   source = "./environments/personal_infra/synapse"
 }
-
+*/
 /*
 module "dsvm" {
   source = "./environments/personal_infra/dsvm_with_networking
@@ -18,4 +23,3 @@ module "vnet_infra" {
 what happened to the df module?
 
 */
-

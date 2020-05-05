@@ -1,0 +1,9 @@
+variable "container_rg_name" {}
+variable "container_rg_location" {}
+variable "container_group1_name" {}
+variable "ip_address_type" {}
+variable "dns_name_label" {}
+variable "os_type" {}
+variable "container_group1_count" {}
+variable "container_name" {}
+variable "container_image" {}

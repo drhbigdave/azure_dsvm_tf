@@ -56,13 +56,14 @@ resource "azurerm_key_vault_access_policy" "kv1_access_policy" {
     "get",
   ]
 }
-*/
+
 output "key_vault_uri_out" {
   value = azurerm_key_vault.kv1.vault_uri
 }
 output "key_vault_name_out" {
   value = azurerm_key_vault.kv1.name
 }
+*/
 output "key_vault_id_out" {
   value = azurerm_key_vault.kv1.id
 }
